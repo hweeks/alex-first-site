@@ -1,5 +1,5 @@
 import React from "react"
-import image from "./IMG_2747.png"
+import image from "../assets/IMG_2747.png"
 let i = 0
 
 const user = {
@@ -30,7 +30,7 @@ export function Profile() {
                     height: 190,
                 }} />
                 <h2>{'Qualifications'}</h2>
-                {qualifications.map(function(data){
+                {qualifications.map(function(data){ //this maps the qualification array in order to list out each item within the array
                     return(
                         <li>
                             {data.title}
