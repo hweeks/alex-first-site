@@ -15,7 +15,16 @@ const qualifications = [
     { title: 'P5.js', id: 5 },
     { title: 'TypeScript', id: 6 },
 ]
-
+export function MyButton(){
+    function handleClick(){
+        alert('You Clicked');
+    }
+    return(
+        <button onClick={handleClick}>
+            Click This
+        </button>
+    )
+}
 export function Profile() {
     
     return(
@@ -39,5 +48,5 @@ export function Profile() {
                 }
                 )}
               </div>  
-    )
+    )        
 }
