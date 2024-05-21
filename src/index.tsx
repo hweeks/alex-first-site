@@ -3,8 +3,11 @@ import ReactDOM from "react-dom/client";
 import { Profile } from "./components/Profile";
 
 const HomePage = () => {
-  return <div>
-    Welcome Home
+  return <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+  }}>
+    <h1>Welcome to the Trial of: </h1>
     <Profile />
   </div>
 }

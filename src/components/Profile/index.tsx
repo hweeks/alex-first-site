@@ -3,7 +3,7 @@ import image from "../assets/IMG_2747.png"
 let i = 0
 
 const user = {
-    name: 'Alex Sorichetti',
+    name: ' Alex Sorichetti',
     imageUrl: image,
     imageSize: 155,
 };
@@ -20,7 +20,7 @@ export function Profile() {
     
     return(
         <div>
-         <h1>{user.name}</h1>
+         <h1>{ user.name}</h1>
             <img
                 className="avatar"
                 src={user.imageUrl}
