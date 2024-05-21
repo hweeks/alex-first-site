@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Profile } from "./components/Profile";
 
 const HomePage = () => {
   return <div>
-    Home
+    Welcome Home
+    <Profile />
   </div>
 }
 
