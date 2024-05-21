@@ -5,7 +5,7 @@ let i = 0
 const user = {
     name: 'Alex Sorichetti',
     imageUrl: image,
-    imageSize: 160,
+    imageSize: 155,
 };
 const qualifications = [
     { title: 'CSS', id: 1 },
@@ -17,7 +17,7 @@ const qualifications = [
 ]
 
 export function Profile() {
-    for(i=0; i < 6; i++){
+    
     return(
         <div>
          <h1>{user.name}</h1>
@@ -30,14 +30,14 @@ export function Profile() {
                     height: 190,
                 }} />
                 <h2>{'Qualifications'}</h2>
-                <li
-                key={qualifications[i].id}
-                >
-                {qualifications[i].title}
-            </li>
-            
-                <li>{qualifications[i+1].title}</li>
+                {qualifications.map(function(data){
+                    return(
+                        <li>
+                            {data.title}
+                        </li>
+                    )
+                }
+                )}
               </div>  
     )
-    }
 }
