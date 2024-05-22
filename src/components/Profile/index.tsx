@@ -26,7 +26,7 @@ export function Form(){
     return(
         <>
         <input value={value} onChange={handleChange} />
-        <p>Would You Hire Me?: {value}</p>
+         <p>Would You Hire Me?: {value}</p>
         </>
     );
 }
@@ -62,6 +62,7 @@ export function Profile() {
                     )
                 }
                 )}
+                <p></p>
                 <MyButton />
                 <p></p>
                 <Form />
