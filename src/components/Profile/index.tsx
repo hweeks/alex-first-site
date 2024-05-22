@@ -1,6 +1,6 @@
 import React from "react"
 import image from "../assets/IMG_2747.png"
-let i = 0
+
 
 const user = {
     name: ' Alex Sorichetti',
@@ -17,7 +17,7 @@ const qualifications = [
 ]
 export function MyButton(){
     function handleClick(){
-        alert('You Clicked');
+        alert('You Clicked, it Accomplished Nothing');
     }
     return(
         <button onClick={handleClick}>
@@ -47,6 +47,7 @@ export function Profile() {
                     )
                 }
                 )}
+                <MyButton />
               </div>  
     )        
 }
