@@ -1,8 +1,8 @@
 import React from "react"
 import { useState } from "react"
 import image from "../assets/IMG_2747.png"
-
-
+import {useReducer} from 'react'
+let i = 1
 const user = {
     name: ' Alex Sorichetti',
     imageUrl: image,
@@ -17,10 +17,20 @@ const qualifications = [
     { title: 'TypeScript', id: 6 },
 ]
 export function Form(){
-    const [value, setValue] = useState("");
-
+    const [value, setValue] = useState('');
+   
     function handleChange(event: React.ChangeEvent<HTMLInputElement>){
         setValue(event.currentTarget.value);
+    }
+    if (value == 'yes'){
+        return(
+            <p>Thank you, please email me: alex@sorichetti.org</p>
+        )
+    }
+    else if (value == 'no'){
+        return(
+            <p>Sorry, I will keep working to improve</p>
+        )
     }
 
     return(
@@ -28,20 +38,25 @@ export function Form(){
         <input value={value} onChange={handleChange} />
          <p>Would You Hire Me?: {value}</p>
         </>
+        
     );
+    
+
+
 }
-export function MyButton(){
-    function handleClick(){
-        alert('You Clicked, it Accomplished Nothing');
-    }
+interface MyButtonProps{
+    title: string;
+    disabled: boolean;
+}
+export function MyButton({ title, disabled }: MyButtonProps){
     return(
-        <button onClick={handleClick}>
-            Click This
-        </button>
+        <button disabled={disabled}>{title}</button>
     )
 }
+
+
 export function Profile() {
-    
+
     return(
         <div>
          <h1>{ user.name}</h1>
@@ -63,9 +78,9 @@ export function Profile() {
                 }
                 )}
                 <p></p>
-                <MyButton />
+                <MyButton title="I do Nothing" disabled = {true} />
                 <p></p>
-                <Form />
+               <Form />
               </div>  
     )        
 }
