@@ -1,13 +1,14 @@
 import React from "react"
 import { useState } from "react"
 import image from "../assets/IMG_2747.png"
-import {useReducer} from 'react'
-let i = 1
+
+
 const user = {
     name: ' Alex Sorichetti',
     imageUrl: image,
     imageSize: 155,
 };
+
 const qualifications = [
     { title: 'CSS', id: 1 },
     { title: 'HTML', id: 2 },
@@ -16,6 +17,7 @@ const qualifications = [
     { title: 'P5.js', id: 5 },
     { title: 'TypeScript', id: 6 },
 ]
+
 export function Form(){
     const [value, setValue] = useState('');
    
@@ -48,10 +50,8 @@ export function Form(){
         </>
         
     );
-    
-
-
 }
+
 interface MyButtonProps{
     title: string;
     disabled: boolean;
@@ -62,9 +62,7 @@ export function MyButton({ title, disabled }: MyButtonProps){
     )
 }
 
-
 export function Profile() {
-
     return(
         <div>
          <h1>{ user.name}</h1>
@@ -86,7 +84,7 @@ export function Profile() {
                 }
                 )}
                 <p></p>
-                <MyButton title="I do Nothing" disabled = {true} />
+                <MyButton title="Pointless Button" disabled = {true} />
                 <p></p>
                <Form />
               </div>  
