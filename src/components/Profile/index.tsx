@@ -22,14 +22,22 @@ export function Form(){
     function handleChange(event: React.ChangeEvent<HTMLInputElement>){
         setValue(event.currentTarget.value);
     }
-    if (value == 'yes'){
+    if (value == 'yes' || value == 'Yes'){
         return(
+            <div>
             <p>Thank you, please email me: alex@sorichetti.org</p>
+            <input value={value} onChange={handleChange} />
+            <p>Would You Hire Me?: {value}</p>
+            </div>
         )
     }
-    else if (value == 'no'){
+    else if (value == 'no' || value == 'No'){
         return(
+            <div>
             <p>Sorry, I will keep working to improve</p>
+            <input value={value} onChange={handleChange} />
+             <p>Would You Hire Me?: {value}</p>
+             </div>
         )
     }
 
