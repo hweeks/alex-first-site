@@ -1,4 +1,5 @@
 import React from "react"
+import { useState } from "react"
 import image from "../assets/IMG_2747.png"
 
 
@@ -15,6 +16,20 @@ const qualifications = [
     { title: 'P5.js', id: 5 },
     { title: 'TypeScript', id: 6 },
 ]
+export function Form(){
+    const [value, setValue] = useState("");
+
+    function handleChange(event: React.ChangeEvent<HTMLInputElement>){
+        setValue(event.currentTarget.value);
+    }
+
+    return(
+        <>
+        <input value={value} onChange={handleChange} />
+        <p>Would You Hire Me?: {value}</p>
+        </>
+    );
+}
 export function MyButton(){
     function handleClick(){
         alert('You Clicked, it Accomplished Nothing');
@@ -48,6 +63,8 @@ export function Profile() {
                 }
                 )}
                 <MyButton />
+                <p></p>
+                <Form />
               </div>  
     )        
 }
