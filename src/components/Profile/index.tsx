@@ -37,9 +37,9 @@ export function Form(){
 
     return(
         <>
-        <p>{myResponse}</p>
-        <input value={value} onChange={handleChange} />
-         <p>Would You Hire Me?: {value}</p>
+        {myResponse}<p/>
+        <input value={value} onChange={handleChange} /><p/>
+         Would You Hire Me?: {value}<p/>
         </>
         
     );
@@ -76,9 +76,9 @@ export function Profile() {
                     )
                 }
                 )}
-                <p></p>
+                <p/>
                 <MyButton title="Pointless Button" disabled = {true} />
-                <p></p>
+                <p/>
                <Form />
               </div>  
     )        
