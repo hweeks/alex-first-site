@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react"
 import image from "../assets/IMG_2747.png"
-
+import styled, {css}from 'styled-components'
 
 const user = {
     name: ' Alex Sorichetti',
@@ -44,7 +44,14 @@ export function Form(){
         
     );
 }
-
+const CoolButton = styled.button`
+    background-color: #2D1E2F;
+    border-radius: 3px;
+    border: 2px solid #FCF6B1;
+    color: #F7B32B;
+    margin: 0 1em;
+    padding 0.25em 1em;
+    `
 interface MyButtonProps{
     title: string;
     disabled: boolean;
@@ -77,7 +84,7 @@ export function Profile() {
                 }
                 )}
                 <p/>
-                <MyButton title="Pointless Button" disabled = {true} />
+                <CoolButton>Hello World</CoolButton>
                 <p/>
                <Form />
               </div>  
