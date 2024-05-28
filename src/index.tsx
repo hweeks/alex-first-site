@@ -1,17 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Profile } from "./components/Profile";
+import { Header } from "./components/Header";
 import styled from "styled-components";
-import glacialnormal from "./components/assets/GlacialIndifference-Regular.otf";
+import { createGlobalStyle } from 'styled-components';
+import { reset } from 'styled-reset';
 
+
+
+const StyleType = createGlobalStyle`
+${reset}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', regular;
+}
+*{
+  box-sizing: inherit;
+}
+`;
 const HomePage = () => {
-  return <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-  }}>
-    <h1>Welcome to the Trial of: </h1>
-    <Profile />
-  </div>
+return( 
+  "no"
+)
 }
 
 const homeNode = document.getElementById("home");
