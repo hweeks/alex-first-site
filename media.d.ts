@@ -19,3 +19,8 @@ declare module "*.woff2" {
 declare module "*.otf"{
   export = value;
 }
+
+declare module "*,pdf"{
+  const content: any;
+  export default content;
+}
