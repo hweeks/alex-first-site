@@ -20,6 +20,8 @@ const MainStyle = createGlobalStyle`
 const styles = {
   container: {
     textAlign: 'center',
+    height: '100vh',
+    width: '100vw',
     margin: 0,
     padding: '20px',
     backgroundColor: '#334445',
