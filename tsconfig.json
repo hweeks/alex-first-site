@@ -11,5 +11,5 @@
   "include": [
     "media.d.ts",
     "src/**/*"
-, "src/components/resume"  ]
+  ]
 }

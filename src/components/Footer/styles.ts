@@ -18,6 +18,6 @@ export const FootLink = styled.a`
     font-size: 3rem;
     -webkit-text-fill-color: #F5D547;
     @media (max-width: 768px){
-        font-size: 12vw;
+        font-size: 1rem;
     }
     `;
