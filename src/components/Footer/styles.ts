@@ -21,3 +21,4 @@ export const FootLink = styled.a`
         font-size: 1rem;
     }
     `;
+    
