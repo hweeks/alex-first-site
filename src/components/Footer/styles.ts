@@ -20,5 +20,5 @@ export const FootLink = styled.a`
     @media (max-width: 768px){
         font-size: 1rem;
     }
-    `;
+`;
     

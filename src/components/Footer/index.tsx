@@ -29,7 +29,9 @@ export const Foots = () => {
     return(
         <Footer>
             <FootText ref={footerRef}>
-                <FootLink href="www.linkedin.com/in/alex-sorichetti">LinkedIn</FootLink>
+                <FootLink>
+                    <a href="www.linkedin.com/in/alex-sorichetti" target="_blank">LinkedIn</a>
+                </FootLink>
                 -
                 <ResumeHome></ResumeHome>
                 -
