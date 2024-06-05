@@ -8,16 +8,14 @@ export const ResumeHome = () => {
     const toggleOpen = () => setOpen(!open);
     return(
         <StyledLayout>
-            <IfOpenTrue open={!open}>
+            <IfOpenTrue open={!open}/>
+            <IfOpenTrue open={open}>
+                <div>
+                    <FootText onClick={toggleOpen}>
+                     <FootLink href={resumePdf}>resume</FootLink>
+                    </FootText>
+                </div>
             </IfOpenTrue>
-        
-        <IfOpenTrue open={open}>
-        <div>
-            <FootText onClick={toggleOpen}>
-                <FootLink href={resumePdf}>resume</FootLink>
-            </FootText>
-        </div>
-        </IfOpenTrue>
-     </StyledLayout>
+        </StyledLayout>
     );
 };
