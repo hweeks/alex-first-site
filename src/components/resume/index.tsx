@@ -12,7 +12,7 @@ export const ResumeHome = () => {
             <IfOpenTrue open={open}>
                 <div>
                     <FootText onClick={toggleOpen}>
-                     <FootLink href={resumePdf}>&Resume;</FootLink>
+                     <FootLink href={resumePdf}>Resume</FootLink>
                     </FootText>
                 </div>
             </IfOpenTrue>

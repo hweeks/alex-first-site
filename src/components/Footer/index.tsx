@@ -30,12 +30,12 @@ export const Foots = () => {
         <Footer>
             <FootText ref={footerRef}>
                 <FootLink href="www.linkedin.com/in/alex-sorichetti" target="_blank">
-                    &LinkedIn;
+                    LinkedIn
                 </FootLink>
                 -
                 <ResumeHome></ResumeHome>
                 -
-                <FootLink href="mailto:alex@sorichetti.org" target="_blank">&eMail;</FootLink>
+                <FootLink href="mailto:alex@sorichetti.org" target="_blank">eMail</FootLink>
             </FootText>
         </Footer>
     );
