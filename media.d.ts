@@ -15,3 +15,12 @@ declare module "*.woff" {
 declare module "*.woff2" {
   export = value;
 }
+
+declare module "*.otf"{
+  export = value;
+}
+
+declare module "*.pdf"{
+  const content: any;
+  export default content;
+}
